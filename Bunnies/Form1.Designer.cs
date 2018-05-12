@@ -33,16 +33,20 @@
             this.passwordLbl = new System.Windows.Forms.Label();
             this.loginTxt = new System.Windows.Forms.TextBox();
             this.passwordTxt = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.regBtn = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // enterBtn
             // 
-            this.enterBtn.Location = new System.Drawing.Point(66, 193);
+            this.enterBtn.Location = new System.Drawing.Point(65, 178);
             this.enterBtn.Name = "enterBtn";
             this.enterBtn.Size = new System.Drawing.Size(167, 23);
             this.enterBtn.TabIndex = 0;
             this.enterBtn.Text = "Enter!";
             this.enterBtn.UseVisualStyleBackColor = true;
+            this.enterBtn.Click += new System.EventHandler(this.enterBtn_Click);
             // 
             // loginLbl
             // 
@@ -76,11 +80,31 @@
             this.passwordTxt.Size = new System.Drawing.Size(100, 20);
             this.passwordTxt.TabIndex = 4;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(24, 8);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(240, 58);
+            this.dataGridView1.TabIndex = 5;
+            // 
+            // regBtn
+            // 
+            this.regBtn.Location = new System.Drawing.Point(66, 207);
+            this.regBtn.Name = "regBtn";
+            this.regBtn.Size = new System.Drawing.Size(167, 23);
+            this.regBtn.TabIndex = 6;
+            this.regBtn.Text = "SIGN UP!";
+            this.regBtn.UseVisualStyleBackColor = true;
+            this.regBtn.Click += new System.EventHandler(this.regBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(289, 264);
+            this.Controls.Add(this.regBtn);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.passwordTxt);
             this.Controls.Add(this.loginTxt);
             this.Controls.Add(this.passwordLbl);
@@ -88,6 +112,7 @@
             this.Controls.Add(this.enterBtn);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,6 +125,8 @@
         private System.Windows.Forms.Label passwordLbl;
         private System.Windows.Forms.TextBox loginTxt;
         private System.Windows.Forms.TextBox passwordTxt;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button regBtn;
     }
 }
 
